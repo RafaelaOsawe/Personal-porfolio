@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rafaela Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\style.css\style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\index.html\index.html" class="active">Home</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\about.html">About</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\skills.html">Skills</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\stars.png" id="stars">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\moon.png" id="moon">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Scroll down...</h2>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Hi, I'm Rafaela.</h2>
+            <p>My coding journey began last year at the start of Covid-19. It quickly became apparent to me that I needed something that would keep my brain working and active whilst having to stay home. 
+                A friend who had started studying a Computer Science degree said Software Engineering would really suit me. I was intrigued by this - because I’d never considered it before. So I started delving further.<br><br>
+                Initially, I used free online resources such as: w3schools and freeCodeCamp to learn mainly about HTML. But, to further my knowledge I used Codecademy to increase my expertise of HTML and to begin learning about CSS and 
+                some vanilla JavaScript. This was a very telling part of my journey. All of this learning was self-led so - completely different to being in a school setting and having a teacher tell you what to do. I learnt so many things 
+                about myself - and one thing that I particularly want to highlight is my improvement of self-control and ability to consistently code, daily, over a span of several months.<br><br>Courses I have enrolled in:<br><br>
+                1) Digital People, Manchester Hive (Prince’s Trust): a course designed to help young people to build their knowledge of the tech industry. Specifically in the coding language of Python. Through various methods including but not 
+                limited to: weekly tutor-led sessions, workshops and independent project building. This programme has helped me build my confidence and has shown me the various ways of entering the tech field without a formal education. I began 
+                this course at the end of April and will finish in the beginning of August.<br><br> 2) Shift Click, Introduction to Coding (DCMS, DfE) is designed to equip you with the vital skills required to begin creating things with code. 
+                It is led by industry experts to guide you into building your confidence and knowledge to enter the world of software development. Shift Click has helped me massively to build and further my knowledge on coding languages such as: 
+                HTML, CSS and JavaScript. But, most importantly being on this course has allowed me to be around like-minded people with professionals who not only help me learn but are able to give me advice about the tech world and how to truly 
+                thrive in it. I began this course in March and I will finish in July.
+                <br><br><img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\200.gif" alt="cat typing on a computer"></p><br>
+            <div class="wrap">
+                <div class="item">
+                    <button class="btn"><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\Rafaela's Resume.pdf" target="_blank">Download CV</a></button>
+                </div>
+            </div>
+                
+        </div>
+    </body>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+        })
+    </script>
+</html>

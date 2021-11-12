@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rafaela Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\style.css\style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\index.html\index.html" class="active">Home</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\about.html">About</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\skills.html">Skills</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\stars.png" id="stars">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\moon.png" id="moon">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Scroll down...</h2>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Skills</h2><br>
+            <p class="links">This is my current skill set. You can also, check my <a href="https://www.freecodecamp.org/xrafaela" target="_blank">FreeCodeCamp</a>, <a href="https://github.com/RafaelaOsawe" target="_blank">GitHub</a>, or <a href="https://www.codewars.com/users/RafaelaOsawe" target="_blank">Code Wars</a>
+            for further details.</p><br><br><br>
+            <div class="skills">
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html"><span></span></div>
+                </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css"><span></span></div>
+                    </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="progress-line javascript"><span></span></div>
+                        </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python"><span></span></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+        })
+    </script>
+</html>

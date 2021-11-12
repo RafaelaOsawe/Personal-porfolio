@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rafaela Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\style.css\style.css">
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\index.html\index.html" class="active">Home</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\about.html">About</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\skills.html">Skills</a></li>
+                <li><a href="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\pages\contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\stars.png" id="stars">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\moon.png" id="moon">
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Scroll down...</h2>
+            <img src="C:\Users\Rafaela\OneDrive\Desktop\Shift Click project\images\mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <main>
+                <section class="section-contact">
+                  <div class="container">
+                    <h1 class="form-header">Let's Chat!</h1>
+                    <p class="form-paragraph">Drop me an email, lets talk!</p>
+                    <form>
+                      <div class="form-group">
+                        <label for="firstName">First name*</label>
+                        <input 
+                          type="text" 
+                          name="firstName" 
+                          id="firstName" 
+                          required class="form-element"
+                          placeholder="First name"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="lastName">Last name*</label>
+                        <input 
+                          type="text" 
+                          name="lastName" 
+                          id="lastName" 
+                          required class="form-element"
+                          placeholder="Last name"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email address*</label>
+                        <input 
+                          type="email" 
+                          name="email" 
+                          id="email" 
+                          required class="form-element"
+                          placeholder="john.doe@example.com"/>
+                      </div>
+                      <div class="form-group">
+                        <label for="company">Company</label>
+                        <input 
+                          type="text" 
+                          name="company" 
+                          id="company" 
+                          class="form-element"
+                          placeholder="Company.inc"/>
+                      </div>
+                      <div class="form-group full">
+                        <label for="message">What are you looking for?</label>
+                        <textarea name="message" id="message" class="form-element" placeholder="Make me a website...please?"></textarea>
+                      </div>
+                      <div class="submit-group">
+                        <input type="submit" value="Send"/>
+                      </div>
+                    </form>
+                  </div>
+                </section>
+              </main>
+        </div>
+    </body>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+        })
+    </script>
+</html>
