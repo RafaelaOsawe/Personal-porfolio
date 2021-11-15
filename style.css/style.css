@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /*font-family: */
 }
 
 body {
@@ -28,13 +27,11 @@ header ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 header ul li {
     list-style: none;
     margin-left: 20px;
-
 }
 
 header ul li a {
@@ -138,7 +135,6 @@ a {
     
 }
 
-
 /* about page - start */
 
 .about-me-page-title {
@@ -146,8 +142,6 @@ a {
     margin-bottom: 10px;
     color: #fff;
 }
-
-
 
 /* image carousel - start */
 
@@ -347,11 +341,9 @@ input [name="r"] .r1{
     content: "50%";
 }
 
+/*skills page - end */
 
-
-                                    /*skills page - end */
-
-                                /* Contacts page - start */
+/* Contacts page - start */
 
 form {
     display: grid;
@@ -405,4 +397,4 @@ form {
     margin-bottom: 20px;
 }
                                    
-                                        /* Contacts page - end */
+/* Contacts page - end */
