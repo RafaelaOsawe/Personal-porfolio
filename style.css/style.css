@@ -220,9 +220,7 @@ input [name="r"] .r1{
     margin-left: -80%;
 }
 /* image carousel - end */
-
 /* about page - end */
-
 /*skills page - start */
 
 .sec {
@@ -233,7 +231,7 @@ input [name="r"] .r1{
 
 .skills {
     width: 1000px;
-    background: thistle;
+    background: rgb(221, 196, 221);
     border-radius: 10px;
     padding: 30px 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -342,14 +340,13 @@ input [name="r"] .r1{
 }
 
 /*skills page - end */
-
 /* Contacts page - start */
 
 form {
     display: grid;
     grid-template-columns: 2fr;
     grid-gap: 16px;
-    background-color: thistle;
+    background-color: rgb(221, 196, 221);
     padding: 32px;
     border-radius: 16px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
@@ -384,7 +381,7 @@ form {
 }
                                    
 .form-header {
-    color: white;
+    color: #fff;
     font-size: 50px;
     text-align: center;
     margin-bottom: 16px;
