@@ -46,11 +46,6 @@ header ul li a:hover {
     color: #2b1055
 }
 
-header ul li a:active {
-    background: #fff;
-    color: #2b1055
-} /*need to fix*/
-
 p a {
     text-decoration: underline;
     color: #fff;
