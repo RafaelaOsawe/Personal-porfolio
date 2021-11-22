@@ -83,7 +83,7 @@ section img#mountain_front {
     position: absolute;
     color: #fff;
     white-space: nowrap;
-    font-size: 5.5vw;
+    font-size: 4.5vw;
     z-index: 9;
 }
 
@@ -115,7 +115,8 @@ a {
     text-decoration: none;
 }
 
-.btn {
+
+.btn, .instruction {
     display: block;
     border: 0;
     font-size: 20px;
@@ -128,6 +129,10 @@ a {
     background: #905cd3;
     text-decoration-color: #fff;
     
+}
+
+.instruction {
+    margin-top: 300px;
 }
 
 /* about page - start */
