@@ -105,7 +105,7 @@ section img#mountain_front {
 .sec p {
     font-size: 1.2em;
     color: #fff;
-    width: 800px;
+    max-width: 750px;
 }
 
 .item {
@@ -141,6 +141,12 @@ a {
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
+}
+
+.about-me p {
+    font-size: 1.2em;
+    color: #fff;
+    max-width: 750px;
 }
 
 /* image carousel - start */
