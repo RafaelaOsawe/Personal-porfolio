@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;;
 }
 
 body {
@@ -237,56 +237,30 @@ input [name="r"] .r1{
 /*skills page - end */
 /* Contacts page - start */
 
-form {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-gap: 10px;
-    background-color: rgb(221, 196, 221);
-    padding: 30px;
+.email {
+    padding-top: 170px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.email-btn, .instruction {
+    display: block;
+    border: 0;
+    font-size: 15px;
+    padding: 10px 10px;
     border-radius: 30px;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-                                   
-    @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    }
 }
 
-.section-contact {
-    min-height: 100vh;
-    width: 1200px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.email-btn:hover,
+.email-btn:focus {
+    background: #905cd3;
+    text-decoration-color: #fff;
 }
-                                   
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
 
-    @media (min-width: 768px) {
-    padding-left: 64px;
-    padding-right: 64px;
-    }
-                                   
-    @media (min-width: 1024px) {
-    padding-letf: 128px;
-    padding-right: 128px;
-    }
-}
-                                   
-.form-header {
-    color: #fff;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 16px;
-}
-                                   
-.form-paragraph {
-    color:turquoise;
-    font-size: 25px;
-    line-height: 1;
-    margin-bottom: 20px;
+.instruction {
+    margin-top: 300px;
 }
                                    
 /* Contacts page - end */
