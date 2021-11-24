@@ -118,9 +118,9 @@ a {
 .btn, .instruction {
     display: block;
     border: 0;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 .btn:hover,
@@ -146,11 +146,6 @@ a {
     color: #fff;
     max-width: 750px;
 }
-
-/* image carousel - start */
-
-
-/* image carousel - end */
 /* about page - end */
 
 /*skills page - start */
@@ -187,7 +182,7 @@ a {
 }
 
 .instruction {
-    margin-top: 300px;
+    margin-top: 200px;
 }
                                    
 /* Contacts page - end */
