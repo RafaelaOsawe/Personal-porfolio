@@ -15,7 +15,7 @@ var i = 0;
 var images = [];
 var time = 4000;
 
-images [0] = 'images\desk PC.jpg';
+images [0] = "images\desk PC.jpg";
 images [1] = 'images\gaming-newbies-stadia-videoSixteenByNineJumbo1600.jpg';
 images [2] = 'images\maxresdefault.jpg';
 images [3] = 'images\desk PC2.jpg';
