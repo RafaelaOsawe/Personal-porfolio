@@ -148,6 +148,20 @@ a {
 }
 /* about page - end */
 
+/* image carousel - start */
+
+.carousel {
+    overflow: hidden;
+    max-width: 400px;
+    position: relative
+}
+
+.carousel .image--visible{
+    display: hidden;
+}
+
+/* image carousel - end */
+
 /*skills page - start */
 
 .sec {
