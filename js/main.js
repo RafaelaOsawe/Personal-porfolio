@@ -23,7 +23,7 @@ images [3] = 'images\desk PC2.jpg';
 function changeImg(){
     document.carousel.src = images[i];
 
-    if(i < images.length - 1) {
+    if(i < images.length - 1){
         i++;
     } else {
         i = 0;
