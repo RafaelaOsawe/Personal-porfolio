@@ -11,3 +11,21 @@ let stars = document.getElementById('stars');
             mountains_front.style.top = value * 0 + 'px';
         })
 
+var imageIndex = 0;
+showImages();
+        
+function plusImages(n) {
+    showImages(imageIndex += n);
+  }  
+
+function showImages() {
+    var i;
+    var images = document.getElementsByClassName("images");
+    for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+    imageIndex++;
+    if (imageIndex > images.length) {imageIndex = 1}
+    images[imageIndex-1].style.display = "block";
+    setTimeout(showImages, 4000);
+}
