@@ -27,5 +27,5 @@ function showImages() {
     imageIndex++;
     if (imageIndex > images.length) {imageIndex = 1}
     images[imageIndex-1].style.display = "block";
-    setTimeout(showImages, 4000);
+    setTimeout(showImages, 3000);
 }
