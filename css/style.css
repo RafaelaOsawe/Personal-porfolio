@@ -156,12 +156,12 @@ a {
 
 .carousel-container {
     max-width: 400px;
-    margin: auto;
     position: relative;
 }
 
 .images {
     display: none;
+    
 }
 
 .previous, .next {

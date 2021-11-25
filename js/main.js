@@ -16,7 +16,11 @@ showImages();
         
 function plusImages(n) {
     showImages(imageIndex += n);
-  }  
+}
+
+function currentImage(n) {
+    showImages(imageIndex = n);
+}
 
 function showImages() {
     var i;
