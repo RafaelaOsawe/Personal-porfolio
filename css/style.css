@@ -91,7 +91,11 @@ section img#mountain_front {
     position: relative;
     padding: 100px;
     background: #1c0521;
+    display: grid;
+    height: 100%;
+    place-items: center;
 }
+
 
 .sec h2 {
     font-size: 3.5em;
@@ -148,15 +152,41 @@ a {
 }
 /* about page - end */
 
-/*skills page - start */
+/* image carousel - start */
 
-.sec {
-    display: grid;
-    height: 100%;
-    place-items: center;
+.carousel-container {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
 }
 
-/*skills page - end */
+.images {
+    display: none;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.previous {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* image carousel - end */
+
 /* Contacts page - start */
 
 .email {

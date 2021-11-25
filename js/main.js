@@ -11,25 +11,21 @@ let stars = document.getElementById('stars');
             mountains_front.style.top = value * 0 + 'px';
         })
 
-var i = 0;
-var images = [];
-var time = 4000;
+var imageIndex = 0;
+showImages();
+        
+function plusImages(n) {
+    showImages(imageIndex += n);
+  }  
 
-images [0] = "images\desk PC.jpg";
-images [1] = 'images\gaming-newbies-stadia-videoSixteenByNineJumbo1600.jpg';
-images [2] = 'images\maxresdefault.jpg';
-images [3] = 'images\desk PC2.jpg';
-
-function changeImg(){
-    document.carousel.src = images[i];
-
-    if(i < images.length - 1){
-        i++;
-    } else {
-        i = 0;
+function showImages() {
+    var i;
+    var images = document.getElementsByClassName("images");
+    for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
     }
-
-    setTimeout("changeImg()", time);
+    imageIndex++;
+    if (imageIndex > images.length) {imageIndex = 1}
+    images[imageIndex-1].style.display = "block";
+    setTimeout(showImages, 4000);
 }
-
-window.onload = changeImg;
