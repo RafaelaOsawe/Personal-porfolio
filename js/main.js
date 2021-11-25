@@ -1,3 +1,4 @@
+//background animation
 let stars = document.getElementById('stars');
         let moon = document.getElementById('moon');
         let mountains_behind = document.getElementById('mountains_behind');
@@ -14,6 +15,7 @@ let stars = document.getElementById('stars');
 var imageIndex = 0;
 showImages();
         
+// previous and next buttons
 function plusImages(n) {
     showImages(imageIndex += n);
 }
